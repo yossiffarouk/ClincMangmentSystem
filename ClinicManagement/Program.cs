@@ -1,5 +1,6 @@
 using ClinicManagement;
 using ClinicManagement.Data;
+using ClinicManagement.Services;
 using ClinicMangmentSystem.Entites;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
@@ -21,6 +22,9 @@ public class Program
                             new ConfigurationBuilder().AddJsonFile("appsettings.json")
                             .Build().GetConnectionString("constr"))
             );
+
+        builder.Services.AddScoped<IDbContextService,ClinicDbContext>();
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.

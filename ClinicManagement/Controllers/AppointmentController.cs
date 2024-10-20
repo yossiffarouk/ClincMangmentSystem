@@ -1,5 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using ClinicManagement.Data;
+using ClinicManagement.Entities;
+using ClinicManagement.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ClinicManagement.Controllers
 {
@@ -7,10 +11,18 @@ namespace ClinicManagement.Controllers
     [ApiController]
     public class AppointmentController : ControllerBase
     {
-        [HttpGet(Name = "GetAppointment")]
-        public IActionResult GetAppointment()
+        private readonly ClinicDbContext service;
+
+        public AppointmentController(IDbContextService _service)
         {
-            return Ok();
+            service = _service.UseMe();
+        }
+
+        [HttpGet(Name = "GetAppointment")]
+        public async Task<ActionResult<IEnumerable<Appointment>>> GetAppointment()
+        {
+            var appointment = await service.Appointments.ToListAsync();
+            return Ok(appointment);
         }
     }
 }
