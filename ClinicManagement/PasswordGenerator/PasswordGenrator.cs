@@ -6,7 +6,7 @@ namespace ClinicManagement.PasswordGenerator
 {
     class PasswordGenrator
     {
-        private static  ClinicDbContext service = null!;
+        private static ClinicDbContext service = null!;
 
         public PasswordGenrator(IDbContextService _service)
         {
@@ -27,7 +27,7 @@ namespace ClinicManagement.PasswordGenerator
             return result;
         }
 
-        public static string HashingPassword(string password)
+        public static string EncodingPassword(string password)
         {
             var bytes = Encoding.UTF8.GetBytes(password);
             return Convert.ToBase64String(bytes);

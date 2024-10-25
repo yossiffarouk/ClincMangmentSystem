@@ -291,7 +291,7 @@ namespace ClinicManagement.Controllers
                 Name = Doctor.Name,
                 Email = Doctor.Email,
                 Phone = Doctor.Phone,
-                Password = HashingPassword(GenerateRandomPassword(12)),
+                Password = EncodingPassword(GenerateRandomPassword(12)),
                 officeId = Doctor.officeId,
                 DeptId = Doctor.DeptId
             };

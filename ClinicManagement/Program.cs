@@ -1,5 +1,6 @@
 using ClinicManagement;
 using ClinicManagement.Data;
+using ClinicManagement.PasswordGenerator;
 using ClinicManagement.Services;
 using ClinicMangmentSystem.Entites;
 using Microsoft.EntityFrameworkCore;

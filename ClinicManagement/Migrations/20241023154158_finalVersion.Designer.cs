@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClinicManagement.Migrations
 {
     [DbContext(typeof(ClinicDbContext))]
-    [Migration("20241019094720_FinalUpdate")]
-    partial class FinalUpdate
+    [Migration("20241023154158_finalVersion")]
+    partial class finalVersion
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -69,7 +69,7 @@ namespace ClinicManagement.Migrations
                             Price = 100m,
                             Reason = "Routine check-up",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 20, 12, 47, 19, 649, DateTimeKind.Local).AddTicks(5618)
+                            Time = new DateTime(2024, 10, 24, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7351)
                         },
                         new
                         {
@@ -79,7 +79,7 @@ namespace ClinicManagement.Migrations
                             Price = 80m,
                             Reason = "Flu symptoms",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 18, 12, 47, 19, 649, DateTimeKind.Local).AddTicks(5664)
+                            Time = new DateTime(2024, 10, 22, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7386)
                         },
                         new
                         {
@@ -89,7 +89,7 @@ namespace ClinicManagement.Migrations
                             Price = 120m,
                             Reason = "Back pain",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 18, 12, 47, 19, 649, DateTimeKind.Local).AddTicks(5668)
+                            Time = new DateTime(2024, 10, 22, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7389)
                         },
                         new
                         {
@@ -99,7 +99,7 @@ namespace ClinicManagement.Migrations
                             Price = 200m,
                             Reason = "Dental check-up",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 20, 12, 47, 19, 649, DateTimeKind.Local).AddTicks(5672)
+                            Time = new DateTime(2024, 10, 24, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7392)
                         },
                         new
                         {
@@ -109,7 +109,7 @@ namespace ClinicManagement.Migrations
                             Price = 90m,
                             Reason = "Skin rash",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 24, 12, 47, 19, 649, DateTimeKind.Local).AddTicks(5675)
+                            Time = new DateTime(2024, 10, 28, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7394)
                         },
                         new
                         {
@@ -119,7 +119,7 @@ namespace ClinicManagement.Migrations
                             Price = 75m,
                             Reason = "Eye examination",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 16, 12, 47, 19, 649, DateTimeKind.Local).AddTicks(5681)
+                            Time = new DateTime(2024, 10, 20, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7398)
                         },
                         new
                         {
@@ -129,7 +129,7 @@ namespace ClinicManagement.Migrations
                             Price = 150m,
                             Reason = "Physical therapy",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 21, 0, 47, 19, 649, DateTimeKind.Local).AddTicks(5684)
+                            Time = new DateTime(2024, 10, 25, 6, 41, 58, 632, DateTimeKind.Local).AddTicks(7401)
                         },
                         new
                         {
@@ -139,7 +139,7 @@ namespace ClinicManagement.Migrations
                             Price = 60m,
                             Reason = "Cold and cough",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 19, 0, 47, 19, 649, DateTimeKind.Local).AddTicks(5686)
+                            Time = new DateTime(2024, 10, 23, 6, 41, 58, 632, DateTimeKind.Local).AddTicks(7403)
                         },
                         new
                         {
@@ -149,7 +149,7 @@ namespace ClinicManagement.Migrations
                             Price = 110m,
                             Reason = "Annual check-up",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 19, 11, 32, 19, 649, DateTimeKind.Local).AddTicks(5689)
+                            Time = new DateTime(2024, 10, 23, 17, 26, 58, 632, DateTimeKind.Local).AddTicks(7405)
                         },
                         new
                         {
@@ -159,7 +159,7 @@ namespace ClinicManagement.Migrations
                             Price = 250m,
                             Reason = "Chest pain",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 19, 13, 47, 19, 649, DateTimeKind.Local).AddTicks(5693)
+                            Time = new DateTime(2024, 10, 23, 19, 41, 58, 632, DateTimeKind.Local).AddTicks(7409)
                         },
                         new
                         {
@@ -169,7 +169,7 @@ namespace ClinicManagement.Migrations
                             Price = 85m,
                             Reason = "Allergy consultation",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 19, 11, 47, 19, 649, DateTimeKind.Local).AddTicks(5697)
+                            Time = new DateTime(2024, 10, 23, 17, 41, 58, 632, DateTimeKind.Local).AddTicks(7411)
                         },
                         new
                         {
@@ -179,7 +179,7 @@ namespace ClinicManagement.Migrations
                             Price = 95m,
                             Reason = "Wound dressing",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 19, 14, 47, 19, 649, DateTimeKind.Local).AddTicks(5700)
+                            Time = new DateTime(2024, 10, 23, 20, 41, 58, 632, DateTimeKind.Local).AddTicks(7414)
                         },
                         new
                         {
@@ -189,7 +189,7 @@ namespace ClinicManagement.Migrations
                             Price = 70m,
                             Reason = "Consultation for headache",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 17, 15, 47, 19, 649, DateTimeKind.Local).AddTicks(5703)
+                            Time = new DateTime(2024, 10, 21, 21, 41, 58, 632, DateTimeKind.Local).AddTicks(7423)
                         },
                         new
                         {
@@ -199,7 +199,7 @@ namespace ClinicManagement.Migrations
                             Price = 120m,
                             Reason = "Pregnancy check-up",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 19, 16, 17, 19, 649, DateTimeKind.Local).AddTicks(5706)
+                            Time = new DateTime(2024, 10, 23, 22, 11, 58, 632, DateTimeKind.Local).AddTicks(7426)
                         },
                         new
                         {
@@ -209,7 +209,7 @@ namespace ClinicManagement.Migrations
                             Price = 110m,
                             Reason = "Diabetes management",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 20, 11, 47, 19, 649, DateTimeKind.Local).AddTicks(5709)
+                            Time = new DateTime(2024, 10, 24, 17, 41, 58, 632, DateTimeKind.Local).AddTicks(7428)
                         },
                         new
                         {
@@ -219,7 +219,7 @@ namespace ClinicManagement.Migrations
                             Price = 85m,
                             Reason = "Blood pressure check",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 19, 9, 17, 19, 649, DateTimeKind.Local).AddTicks(5711)
+                            Time = new DateTime(2024, 10, 23, 15, 11, 58, 632, DateTimeKind.Local).AddTicks(7430)
                         },
                         new
                         {
@@ -229,7 +229,7 @@ namespace ClinicManagement.Migrations
                             Price = 130m,
                             Reason = "Knee pain assessment",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 19, 15, 17, 19, 649, DateTimeKind.Local).AddTicks(5714)
+                            Time = new DateTime(2024, 10, 23, 21, 11, 58, 632, DateTimeKind.Local).AddTicks(7433)
                         });
                 });
 
@@ -338,7 +338,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 1,
                             Email = "Ahmed.Tharwat@clinic.com",
                             Name = "Dr. Ahmed Tharwat",
-                            Password = "QGZJU2lTV1N6N0Y5",
+                            Password = "YV56ZjRGQFd+aV4y",
                             Phone = "+201022812243",
                             officeId = 1
                         },
@@ -348,7 +348,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 2,
                             Email = "Esraa.Zaki@clinic.com",
                             Name = "Dr. Esraa Zaki",
-                            Password = "VklmaSgkV3BQN01v",
+                            Password = "QiMmVUtKMFchdTE0",
                             Phone = "+201155698835",
                             officeId = 2
                         },
@@ -358,7 +358,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 3,
                             Email = "Ahmed.Khaled@clinic.com",
                             Name = "Dr. Ahmed Khaled",
-                            Password = "ZmZQZm1eSlFnMURU",
+                            Password = "TV9vbXhANzVGYl5l",
                             Phone = "+201012345678",
                             officeId = 3
                         },
@@ -368,7 +368,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 4,
                             Email = "Fatima.Hassan@clinic.com",
                             Name = "Dr. Fatima Hassan",
-                            Password = "Q2dudjhQeHpoSypj",
+                            Password = "b1FWdCQ2dX4mRG41",
                             Phone = "+201198765432",
                             officeId = 4
                         },
@@ -378,7 +378,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 5,
                             Email = "Mohamed.Ali@clinic.com",
                             Name = "Dr. Mohamed Ali",
-                            Password = "eGo2KjEtXmVIJkRD",
+                            Password = "cGR1Z15wYWVXbX4x",
                             Phone = "+201234567890"
                         },
                         new
@@ -387,7 +387,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 6,
                             Email = "Sara.Mohamed@clinic.com",
                             Name = "Dr. Sara Mohamed",
-                            Password = "NWRebVdpTHgtbkox",
+                            Password = "N2hkMn4hRChWTWIp",
                             Phone = "+201512345678"
                         },
                         new
@@ -396,7 +396,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 7,
                             Email = "Omar.Mostafa@clinic.com",
                             Name = "Dr. Omar Mostafa",
-                            Password = "a2R6LTBMQnlQX2wp",
+                            Password = "T1FBJWtfN1NqQW9R",
                             Phone = "+201146890012",
                             officeId = 5
                         },
@@ -406,7 +406,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 8,
                             Email = "Mohamed.AbdEl-Hameed@clinic.com",
                             Name = "Dr. Mohamed AdbEL-Hameed",
-                            Password = "UGEqaTZiUUtefkRH",
+                            Password = "OVp3NChKZm4jZ1Bu",
                             Phone = "+201014501522",
                             officeId = 6
                         },
@@ -416,7 +416,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 4,
                             Email = "AhmedIssam@gmail.com",
                             Name = "Dr. Ahmed Issam",
-                            Password = "QWt1fmw4LWQtRyYx",
+                            Password = "NFUmJCZPKiVqOUpU",
                             Phone = "+201001626756"
                         },
                         new
@@ -425,7 +425,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 6,
                             Email = "MohamedTawfiq@gmail.com",
                             Name = "Dr. Mohamed Tawfiq",
-                            Password = "S3YjTzI4QGlHNlph",
+                            Password = "TksoKGkxJnVpKCFk",
                             Phone = "+201557945331"
                         });
                 });
@@ -988,19 +988,19 @@ namespace ClinicManagement.Migrations
 
             modelBuilder.Entity("ClinicMangmentSystem.Entites.Doctor", b =>
                 {
-                    b.HasOne("ClinicManagement.Entities.Department", "Department")
+                    b.HasOne("ClinicManagement.Entities.Department", "department")
                         .WithMany("Doctors")
                         .HasForeignKey("DeptId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ClinicMangmentSystem.Entites.Office", "Office")
+                    b.HasOne("ClinicMangmentSystem.Entites.Office", "office")
                         .WithOne("Doctor")
                         .HasForeignKey("ClinicMangmentSystem.Entites.Doctor", "officeId");
 
-                    b.Navigation("Department");
+                    b.Navigation("department");
 
-                    b.Navigation("Office");
+                    b.Navigation("office");
                 });
 
             modelBuilder.Entity("ClinicMangmentSystem.Entites.Prescription", b =>

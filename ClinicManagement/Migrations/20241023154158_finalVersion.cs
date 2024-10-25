@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ClinicManagement.Migrations
 {
     /// <inheritdoc />
-    public partial class FinalUpdate : Migration
+    public partial class finalVersion : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -215,16 +215,16 @@ namespace ClinicManagement.Migrations
                 columns: new[] { "Id", "DeptId", "Email", "Name", "Password", "Phone", "officeId" },
                 values: new object[,]
                 {
-                    { 1, 1, "Ahmed.Tharwat@clinic.com", "Dr. Ahmed Tharwat", "QGZJU2lTV1N6N0Y5", "+201022812243", 1 },
-                    { 2, 2, "Esraa.Zaki@clinic.com", "Dr. Esraa Zaki", "VklmaSgkV3BQN01v", "+201155698835", 2 },
-                    { 3, 3, "Ahmed.Khaled@clinic.com", "Dr. Ahmed Khaled", "ZmZQZm1eSlFnMURU", "+201012345678", 3 },
-                    { 4, 4, "Fatima.Hassan@clinic.com", "Dr. Fatima Hassan", "Q2dudjhQeHpoSypj", "+201198765432", 4 },
-                    { 5, 5, "Mohamed.Ali@clinic.com", "Dr. Mohamed Ali", "eGo2KjEtXmVIJkRD", "+201234567890", null },
-                    { 6, 6, "Sara.Mohamed@clinic.com", "Dr. Sara Mohamed", "NWRebVdpTHgtbkox", "+201512345678", null },
-                    { 7, 7, "Omar.Mostafa@clinic.com", "Dr. Omar Mostafa", "a2R6LTBMQnlQX2wp", "+201146890012", 5 },
-                    { 8, 8, "Mohamed.AbdEl-Hameed@clinic.com", "Dr. Mohamed AdbEL-Hameed", "UGEqaTZiUUtefkRH", "+201014501522", 6 },
-                    { 9, 4, "AhmedIssam@gmail.com", "Dr. Ahmed Issam", "QWt1fmw4LWQtRyYx", "+201001626756", null },
-                    { 10, 6, "MohamedTawfiq@gmail.com", "Dr. Mohamed Tawfiq", "S3YjTzI4QGlHNlph", "+201557945331", null }
+                    { 1, 1, "Ahmed.Tharwat@clinic.com", "Dr. Ahmed Tharwat", "YV56ZjRGQFd+aV4y", "+201022812243", 1 },
+                    { 2, 2, "Esraa.Zaki@clinic.com", "Dr. Esraa Zaki", "QiMmVUtKMFchdTE0", "+201155698835", 2 },
+                    { 3, 3, "Ahmed.Khaled@clinic.com", "Dr. Ahmed Khaled", "TV9vbXhANzVGYl5l", "+201012345678", 3 },
+                    { 4, 4, "Fatima.Hassan@clinic.com", "Dr. Fatima Hassan", "b1FWdCQ2dX4mRG41", "+201198765432", 4 },
+                    { 5, 5, "Mohamed.Ali@clinic.com", "Dr. Mohamed Ali", "cGR1Z15wYWVXbX4x", "+201234567890", null },
+                    { 6, 6, "Sara.Mohamed@clinic.com", "Dr. Sara Mohamed", "N2hkMn4hRChWTWIp", "+201512345678", null },
+                    { 7, 7, "Omar.Mostafa@clinic.com", "Dr. Omar Mostafa", "T1FBJWtfN1NqQW9R", "+201146890012", 5 },
+                    { 8, 8, "Mohamed.AbdEl-Hameed@clinic.com", "Dr. Mohamed AdbEL-Hameed", "OVp3NChKZm4jZ1Bu", "+201014501522", 6 },
+                    { 9, 4, "AhmedIssam@gmail.com", "Dr. Ahmed Issam", "NFUmJCZPKiVqOUpU", "+201001626756", null },
+                    { 10, 6, "MohamedTawfiq@gmail.com", "Dr. Mohamed Tawfiq", "TksoKGkxJnVpKCFk", "+201557945331", null }
                 });
 
             migrationBuilder.InsertData(
@@ -232,23 +232,23 @@ namespace ClinicManagement.Migrations
                 columns: new[] { "Id", "DoctorId", "PatientId", "Price", "Cause Of Disease", "State", "Time" },
                 values: new object[,]
                 {
-                    { 1, 1, 1, 100m, "Routine check-up", "schedule", new DateTime(2024, 10, 20, 12, 47, 19, 649, DateTimeKind.Local).AddTicks(5618) },
-                    { 2, 2, 2, 80m, "Flu symptoms", "completed", new DateTime(2024, 10, 18, 12, 47, 19, 649, DateTimeKind.Local).AddTicks(5664) },
-                    { 3, 1, 3, 120m, "Back pain", "completed", new DateTime(2024, 10, 18, 12, 47, 19, 649, DateTimeKind.Local).AddTicks(5668) },
-                    { 4, 3, 5, 200m, "Dental check-up", "schedule", new DateTime(2024, 10, 20, 12, 47, 19, 649, DateTimeKind.Local).AddTicks(5672) },
-                    { 5, 2, 5, 90m, "Skin rash", "schedule", new DateTime(2024, 10, 24, 12, 47, 19, 649, DateTimeKind.Local).AddTicks(5675) },
-                    { 6, 4, 6, 75m, "Eye examination", "completed", new DateTime(2024, 10, 16, 12, 47, 19, 649, DateTimeKind.Local).AddTicks(5681) },
-                    { 7, 1, 7, 150m, "Physical therapy", "schedule", new DateTime(2024, 10, 21, 0, 47, 19, 649, DateTimeKind.Local).AddTicks(5684) },
-                    { 8, 2, 8, 60m, "Cold and cough", "completed", new DateTime(2024, 10, 19, 0, 47, 19, 649, DateTimeKind.Local).AddTicks(5686) },
-                    { 9, 3, 9, 110m, "Annual check-up", "completed", new DateTime(2024, 10, 19, 11, 32, 19, 649, DateTimeKind.Local).AddTicks(5689) },
-                    { 10, 4, 10, 250m, "Chest pain", "schedule", new DateTime(2024, 10, 19, 13, 47, 19, 649, DateTimeKind.Local).AddTicks(5693) },
-                    { 11, 1, 10, 85m, "Allergy consultation", "completed", new DateTime(2024, 10, 19, 11, 47, 19, 649, DateTimeKind.Local).AddTicks(5697) },
-                    { 12, 2, 12, 95m, "Wound dressing", "schedule", new DateTime(2024, 10, 19, 14, 47, 19, 649, DateTimeKind.Local).AddTicks(5700) },
-                    { 13, 3, 11, 70m, "Consultation for headache", "completed", new DateTime(2024, 10, 17, 15, 47, 19, 649, DateTimeKind.Local).AddTicks(5703) },
-                    { 14, 4, 14, 120m, "Pregnancy check-up", "schedule", new DateTime(2024, 10, 19, 16, 17, 19, 649, DateTimeKind.Local).AddTicks(5706) },
-                    { 15, 1, 12, 110m, "Diabetes management", "schedule", new DateTime(2024, 10, 20, 11, 47, 19, 649, DateTimeKind.Local).AddTicks(5709) },
-                    { 16, 2, 10, 85m, "Blood pressure check", "completed", new DateTime(2024, 10, 19, 9, 17, 19, 649, DateTimeKind.Local).AddTicks(5711) },
-                    { 17, 3, 11, 130m, "Knee pain assessment", "completed", new DateTime(2024, 10, 19, 15, 17, 19, 649, DateTimeKind.Local).AddTicks(5714) }
+                    { 1, 1, 1, 100m, "Routine check-up", "schedule", new DateTime(2024, 10, 24, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7351) },
+                    { 2, 2, 2, 80m, "Flu symptoms", "completed", new DateTime(2024, 10, 22, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7386) },
+                    { 3, 1, 3, 120m, "Back pain", "completed", new DateTime(2024, 10, 22, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7389) },
+                    { 4, 3, 5, 200m, "Dental check-up", "schedule", new DateTime(2024, 10, 24, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7392) },
+                    { 5, 2, 5, 90m, "Skin rash", "schedule", new DateTime(2024, 10, 28, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7394) },
+                    { 6, 4, 6, 75m, "Eye examination", "completed", new DateTime(2024, 10, 20, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7398) },
+                    { 7, 1, 7, 150m, "Physical therapy", "schedule", new DateTime(2024, 10, 25, 6, 41, 58, 632, DateTimeKind.Local).AddTicks(7401) },
+                    { 8, 2, 8, 60m, "Cold and cough", "completed", new DateTime(2024, 10, 23, 6, 41, 58, 632, DateTimeKind.Local).AddTicks(7403) },
+                    { 9, 3, 9, 110m, "Annual check-up", "completed", new DateTime(2024, 10, 23, 17, 26, 58, 632, DateTimeKind.Local).AddTicks(7405) },
+                    { 10, 4, 10, 250m, "Chest pain", "schedule", new DateTime(2024, 10, 23, 19, 41, 58, 632, DateTimeKind.Local).AddTicks(7409) },
+                    { 11, 1, 10, 85m, "Allergy consultation", "completed", new DateTime(2024, 10, 23, 17, 41, 58, 632, DateTimeKind.Local).AddTicks(7411) },
+                    { 12, 2, 12, 95m, "Wound dressing", "schedule", new DateTime(2024, 10, 23, 20, 41, 58, 632, DateTimeKind.Local).AddTicks(7414) },
+                    { 13, 3, 11, 70m, "Consultation for headache", "completed", new DateTime(2024, 10, 21, 21, 41, 58, 632, DateTimeKind.Local).AddTicks(7423) },
+                    { 14, 4, 14, 120m, "Pregnancy check-up", "schedule", new DateTime(2024, 10, 23, 22, 11, 58, 632, DateTimeKind.Local).AddTicks(7426) },
+                    { 15, 1, 12, 110m, "Diabetes management", "schedule", new DateTime(2024, 10, 24, 17, 41, 58, 632, DateTimeKind.Local).AddTicks(7428) },
+                    { 16, 2, 10, 85m, "Blood pressure check", "completed", new DateTime(2024, 10, 23, 15, 11, 58, 632, DateTimeKind.Local).AddTicks(7430) },
+                    { 17, 3, 11, 130m, "Knee pain assessment", "completed", new DateTime(2024, 10, 23, 21, 11, 58, 632, DateTimeKind.Local).AddTicks(7433) }
                 });
 
             migrationBuilder.InsertData(
