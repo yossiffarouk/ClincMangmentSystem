@@ -1,5 +1,6 @@
 using ClinicManagement;
 using ClinicManagement.Data;
+using ClinicManagement.Repo.AppointentRepo;
 using ClinicMangmentSystem.Entites;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
@@ -21,6 +22,9 @@ public class Program
                             new ConfigurationBuilder().AddJsonFile("appsettings.json")
                             .Build().GetConnectionString("constr"))
             );
+
+        //ser
+        builder.Services.AddScoped<IAppointmentRepo , AppointmentRepo>();
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.

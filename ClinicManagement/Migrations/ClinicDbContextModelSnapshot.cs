@@ -66,7 +66,7 @@ namespace ClinicManagement.Migrations
                             Price = 100m,
                             Reason = "Routine check-up",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 18, 19, 30, 25, 594, DateTimeKind.Local).AddTicks(3739)
+                            Time = new DateTime(2024, 10, 21, 19, 8, 17, 56, DateTimeKind.Local).AddTicks(1086)
                         },
                         new
                         {
@@ -76,7 +76,7 @@ namespace ClinicManagement.Migrations
                             Price = 80m,
                             Reason = "Flu symptoms",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 16, 19, 30, 25, 594, DateTimeKind.Local).AddTicks(3778)
+                            Time = new DateTime(2024, 10, 19, 19, 8, 17, 56, DateTimeKind.Local).AddTicks(1122)
                         },
                         new
                         {
@@ -86,7 +86,7 @@ namespace ClinicManagement.Migrations
                             Price = 120m,
                             Reason = "Back pain",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 16, 19, 30, 25, 594, DateTimeKind.Local).AddTicks(3781)
+                            Time = new DateTime(2024, 10, 19, 19, 8, 17, 56, DateTimeKind.Local).AddTicks(1125)
                         },
                         new
                         {
@@ -96,7 +96,7 @@ namespace ClinicManagement.Migrations
                             Price = 200m,
                             Reason = "Dental check-up",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 18, 19, 30, 25, 594, DateTimeKind.Local).AddTicks(3784)
+                            Time = new DateTime(2024, 10, 21, 19, 8, 17, 56, DateTimeKind.Local).AddTicks(1127)
                         },
                         new
                         {
@@ -106,7 +106,7 @@ namespace ClinicManagement.Migrations
                             Price = 90m,
                             Reason = "Skin rash",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 22, 19, 30, 25, 594, DateTimeKind.Local).AddTicks(3788)
+                            Time = new DateTime(2024, 10, 25, 19, 8, 17, 56, DateTimeKind.Local).AddTicks(1129)
                         },
                         new
                         {
@@ -116,7 +116,7 @@ namespace ClinicManagement.Migrations
                             Price = 75m,
                             Reason = "Eye examination",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 14, 19, 30, 25, 594, DateTimeKind.Local).AddTicks(3792)
+                            Time = new DateTime(2024, 10, 17, 19, 8, 17, 56, DateTimeKind.Local).AddTicks(1133)
                         },
                         new
                         {
@@ -126,7 +126,7 @@ namespace ClinicManagement.Migrations
                             Price = 150m,
                             Reason = "Physical therapy",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 19, 7, 30, 25, 594, DateTimeKind.Local).AddTicks(3795)
+                            Time = new DateTime(2024, 10, 22, 7, 8, 17, 56, DateTimeKind.Local).AddTicks(1135)
                         },
                         new
                         {
@@ -136,7 +136,7 @@ namespace ClinicManagement.Migrations
                             Price = 60m,
                             Reason = "Cold and cough",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 17, 7, 30, 25, 594, DateTimeKind.Local).AddTicks(3798)
+                            Time = new DateTime(2024, 10, 20, 7, 8, 17, 56, DateTimeKind.Local).AddTicks(1137)
                         },
                         new
                         {
@@ -146,7 +146,7 @@ namespace ClinicManagement.Migrations
                             Price = 110m,
                             Reason = "Annual check-up",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 17, 18, 15, 25, 594, DateTimeKind.Local).AddTicks(3801)
+                            Time = new DateTime(2024, 10, 20, 17, 53, 17, 56, DateTimeKind.Local).AddTicks(1139)
                         },
                         new
                         {
@@ -156,7 +156,7 @@ namespace ClinicManagement.Migrations
                             Price = 250m,
                             Reason = "Chest pain",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 17, 20, 30, 25, 594, DateTimeKind.Local).AddTicks(3805)
+                            Time = new DateTime(2024, 10, 20, 20, 8, 17, 56, DateTimeKind.Local).AddTicks(1141)
                         },
                         new
                         {
@@ -166,7 +166,7 @@ namespace ClinicManagement.Migrations
                             Price = 85m,
                             Reason = "Allergy consultation",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 17, 18, 30, 25, 594, DateTimeKind.Local).AddTicks(3808)
+                            Time = new DateTime(2024, 10, 20, 18, 8, 17, 56, DateTimeKind.Local).AddTicks(1143)
                         },
                         new
                         {
@@ -176,7 +176,7 @@ namespace ClinicManagement.Migrations
                             Price = 95m,
                             Reason = "Wound dressing",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 17, 21, 30, 25, 594, DateTimeKind.Local).AddTicks(3811)
+                            Time = new DateTime(2024, 10, 20, 21, 8, 17, 56, DateTimeKind.Local).AddTicks(1145)
                         },
                         new
                         {
@@ -186,7 +186,7 @@ namespace ClinicManagement.Migrations
                             Price = 70m,
                             Reason = "Consultation for headache",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 15, 22, 30, 25, 594, DateTimeKind.Local).AddTicks(3814)
+                            Time = new DateTime(2024, 10, 18, 22, 8, 17, 56, DateTimeKind.Local).AddTicks(1147)
                         },
                         new
                         {
@@ -196,7 +196,7 @@ namespace ClinicManagement.Migrations
                             Price = 120m,
                             Reason = "Pregnancy check-up",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 17, 23, 0, 25, 594, DateTimeKind.Local).AddTicks(3818)
+                            Time = new DateTime(2024, 10, 20, 22, 38, 17, 56, DateTimeKind.Local).AddTicks(1149)
                         },
                         new
                         {
@@ -206,7 +206,7 @@ namespace ClinicManagement.Migrations
                             Price = 110m,
                             Reason = "Diabetes management",
                             State = "schedule",
-                            Time = new DateTime(2024, 10, 18, 18, 30, 25, 594, DateTimeKind.Local).AddTicks(3821)
+                            Time = new DateTime(2024, 10, 21, 18, 8, 17, 56, DateTimeKind.Local).AddTicks(1150)
                         },
                         new
                         {
@@ -216,7 +216,7 @@ namespace ClinicManagement.Migrations
                             Price = 85m,
                             Reason = "Blood pressure check",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 17, 16, 0, 25, 594, DateTimeKind.Local).AddTicks(3823)
+                            Time = new DateTime(2024, 10, 20, 15, 38, 17, 56, DateTimeKind.Local).AddTicks(1152)
                         },
                         new
                         {
@@ -226,7 +226,7 @@ namespace ClinicManagement.Migrations
                             Price = 130m,
                             Reason = "Knee pain assessment",
                             State = "completed",
-                            Time = new DateTime(2024, 10, 17, 22, 0, 25, 594, DateTimeKind.Local).AddTicks(3826)
+                            Time = new DateTime(2024, 10, 20, 21, 38, 17, 56, DateTimeKind.Local).AddTicks(1154)
                         });
                 });
 
@@ -335,7 +335,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 1,
                             Email = "Ahmed.Tharwat@clinic.com",
                             Name = "Dr. Ahmed Tharwat",
-                            Password = "z@ZQ$NBmjc",
+                            Password = "2U88~dVA9I",
                             Phone = "+201022812243",
                             officeId = 1
                         },
@@ -345,7 +345,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 2,
                             Email = "Esraa.Zaki@clinic.com",
                             Name = "Dr. Esraa Zaki",
-                            Password = "vTWkNQNKa#",
+                            Password = "wSzxjWHSXO",
                             Phone = "+201155698835",
                             officeId = 2
                         },
@@ -355,7 +355,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 3,
                             Email = "Ahmed.Khaled@clinic.com",
                             Name = "Dr. Ahmed Khaled",
-                            Password = "x*~#lf&hQH",
+                            Password = "w#mW9SFnU8",
                             Phone = "+201012345678",
                             officeId = 3
                         },
@@ -365,7 +365,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 4,
                             Email = "Fatima.Hassan@clinic.com",
                             Name = "Dr. Fatima Hassan",
-                            Password = "7s-k%f$@!_",
+                            Password = "9bGswO_f3@",
                             Phone = "+201198765432",
                             officeId = 4
                         },
@@ -375,7 +375,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 5,
                             Email = "Mohamed.Ali@clinic.com",
                             Name = "Dr. Mohamed Ali",
-                            Password = "M%A^LK)*i(",
+                            Password = "If-3^Tmw^O",
                             Phone = "+201234567890"
                         },
                         new
@@ -384,7 +384,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 6,
                             Email = "Sara.Mohamed@clinic.com",
                             Name = "Dr. Sara Mohamed",
-                            Password = "4E3~gjH#^O",
+                            Password = "gVjW_fi#Tx",
                             Phone = "+201512345678"
                         },
                         new
@@ -393,7 +393,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 7,
                             Email = "Omar.Mostafa@clinic.com",
                             Name = "Dr. Omar Mostafa",
-                            Password = "*eKVlsmfU)",
+                            Password = "79qo(kPgNg",
                             Phone = "+201146890012",
                             officeId = 5
                         },
@@ -403,7 +403,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 8,
                             Email = "Mohamed.AbdEl-Hameed@clinic.com",
                             Name = "Dr. Mohamed AdbEL-Hameed",
-                            Password = "p6-K%x_&jU",
+                            Password = "uTqLe@GNSW",
                             Phone = "+201014501522",
                             officeId = 6
                         });
@@ -862,8 +862,14 @@ namespace ClinicManagement.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<TimeSpan>("DoctorComeIn")
+                        .HasColumnType("time");
+
                     b.Property<int>("DoctorId")
                         .HasColumnType("int");
+
+                    b.Property<TimeSpan>("DoctorLeaveIn")
+                        .HasColumnType("time");
 
                     b.HasKey("Id");
 
@@ -876,73 +882,97 @@ namespace ClinicManagement.Migrations
                         {
                             Id = 1,
                             Day = "Monday",
-                            DoctorId = 1
+                            DoctorComeIn = new TimeSpan(0, 9, 0, 0, 0),
+                            DoctorId = 1,
+                            DoctorLeaveIn = new TimeSpan(0, 11, 0, 0, 0)
                         },
                         new
                         {
                             Id = 2,
                             Day = "Monday",
-                            DoctorId = 1
+                            DoctorComeIn = new TimeSpan(0, 9, 0, 0, 0),
+                            DoctorId = 1,
+                            DoctorLeaveIn = new TimeSpan(0, 11, 0, 0, 0)
                         },
                         new
                         {
                             Id = 3,
                             Day = "Tuesday",
-                            DoctorId = 2
+                            DoctorComeIn = new TimeSpan(0, 9, 0, 0, 0),
+                            DoctorId = 2,
+                            DoctorLeaveIn = new TimeSpan(0, 11, 0, 0, 0)
                         },
                         new
                         {
                             Id = 4,
                             Day = "Tuesday",
-                            DoctorId = 3
+                            DoctorComeIn = new TimeSpan(0, 9, 0, 0, 0),
+                            DoctorId = 3,
+                            DoctorLeaveIn = new TimeSpan(0, 11, 0, 0, 0)
                         },
                         new
                         {
                             Id = 5,
                             Day = "Wednesday",
-                            DoctorId = 4
+                            DoctorComeIn = new TimeSpan(0, 9, 0, 0, 0),
+                            DoctorId = 4,
+                            DoctorLeaveIn = new TimeSpan(0, 11, 0, 0, 0)
                         },
                         new
                         {
                             Id = 6,
                             Day = "Wednesday",
-                            DoctorId = 4
+                            DoctorComeIn = new TimeSpan(0, 9, 0, 0, 0),
+                            DoctorId = 4,
+                            DoctorLeaveIn = new TimeSpan(0, 11, 0, 0, 0)
                         },
                         new
                         {
                             Id = 7,
                             Day = "Thursday",
-                            DoctorId = 5
+                            DoctorComeIn = new TimeSpan(0, 9, 0, 0, 0),
+                            DoctorId = 5,
+                            DoctorLeaveIn = new TimeSpan(0, 11, 0, 0, 0)
                         },
                         new
                         {
                             Id = 8,
                             Day = "Thursday",
-                            DoctorId = 5
+                            DoctorComeIn = new TimeSpan(0, 9, 0, 0, 0),
+                            DoctorId = 5,
+                            DoctorLeaveIn = new TimeSpan(0, 11, 0, 0, 0)
                         },
                         new
                         {
                             Id = 9,
                             Day = "Friday",
-                            DoctorId = 6
+                            DoctorComeIn = new TimeSpan(0, 9, 0, 0, 0),
+                            DoctorId = 6,
+                            DoctorLeaveIn = new TimeSpan(0, 11, 0, 0, 0)
                         },
                         new
                         {
                             Id = 10,
                             Day = "Friday",
-                            DoctorId = 7
+                            DoctorComeIn = new TimeSpan(0, 9, 0, 0, 0),
+                            DoctorId = 7,
+                            DoctorLeaveIn = new TimeSpan(0, 11, 0, 0, 0)
                         },
                         new
                         {
                             Id = 11,
                             Day = "Saturday",
-                            DoctorId = 7
+                            DoctorComeIn = new TimeSpan(0, 9, 0, 0, 0),
+                            DoctorId = 7,
+                            DoctorLeaveIn = new TimeSpan(0, 11, 0, 0, 0)
                         },
                         new
                         {
                             Id = 12,
                             Day = "Saturday",
-                            DoctorId = 8
+                            DoctorComeIn = new TimeSpan(0, 9, 0, 0, 0),
+                            DoctorId = 8,
+                            DoctorLeaveIn = new TimeSpan(0, 11, 0, 0, 0)
                         });
                 });
 
@@ -1009,107 +1039,7 @@ namespace ClinicManagement.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.OwnsOne("ClinicMangmentSystem.Entites.TimeSlot", "TimeSlot", b1 =>
-                        {
-                            b1.Property<int>("SchedualeTimeId")
-                                .HasColumnType("int");
-
-                            b1.Property<TimeSpan>("EndAt")
-                                .HasColumnType("Time")
-                                .HasColumnName("EndTime");
-
-                            b1.Property<TimeSpan>("StartAt")
-                                .HasColumnType("Time")
-                                .HasColumnName("StartTime");
-
-                            b1.HasKey("SchedualeTimeId");
-
-                            b1.ToTable("tblSchedualeTime");
-
-                            b1.WithOwner("SchedualeTime")
-                                .HasForeignKey("SchedualeTimeId");
-
-                            b1.Navigation("SchedualeTime");
-
-                            b1.HasData(
-                                new
-                                {
-                                    SchedualeTimeId = 1,
-                                    EndAt = new TimeSpan(0, 11, 0, 0, 0),
-                                    StartAt = new TimeSpan(0, 9, 0, 0, 0)
-                                },
-                                new
-                                {
-                                    SchedualeTimeId = 2,
-                                    EndAt = new TimeSpan(0, 13, 0, 0, 0),
-                                    StartAt = new TimeSpan(0, 11, 0, 0, 0)
-                                },
-                                new
-                                {
-                                    SchedualeTimeId = 3,
-                                    EndAt = new TimeSpan(0, 12, 0, 0, 0),
-                                    StartAt = new TimeSpan(0, 9, 0, 0, 0)
-                                },
-                                new
-                                {
-                                    SchedualeTimeId = 4,
-                                    EndAt = new TimeSpan(0, 15, 0, 0, 0),
-                                    StartAt = new TimeSpan(0, 13, 0, 0, 0)
-                                },
-                                new
-                                {
-                                    SchedualeTimeId = 5,
-                                    EndAt = new TimeSpan(0, 12, 0, 0, 0),
-                                    StartAt = new TimeSpan(0, 10, 0, 0, 0)
-                                },
-                                new
-                                {
-                                    SchedualeTimeId = 6,
-                                    EndAt = new TimeSpan(0, 14, 0, 0, 0),
-                                    StartAt = new TimeSpan(0, 12, 0, 0, 0)
-                                },
-                                new
-                                {
-                                    SchedualeTimeId = 7,
-                                    EndAt = new TimeSpan(0, 11, 0, 0, 0),
-                                    StartAt = new TimeSpan(0, 9, 0, 0, 0)
-                                },
-                                new
-                                {
-                                    SchedualeTimeId = 8,
-                                    EndAt = new TimeSpan(0, 16, 0, 0, 0),
-                                    StartAt = new TimeSpan(0, 14, 0, 0, 0)
-                                },
-                                new
-                                {
-                                    SchedualeTimeId = 9,
-                                    EndAt = new TimeSpan(0, 12, 0, 0, 0),
-                                    StartAt = new TimeSpan(0, 10, 0, 0, 0)
-                                },
-                                new
-                                {
-                                    SchedualeTimeId = 10,
-                                    EndAt = new TimeSpan(0, 15, 0, 0, 0),
-                                    StartAt = new TimeSpan(0, 13, 0, 0, 0)
-                                },
-                                new
-                                {
-                                    SchedualeTimeId = 11,
-                                    EndAt = new TimeSpan(0, 11, 0, 0, 0),
-                                    StartAt = new TimeSpan(0, 9, 0, 0, 0)
-                                },
-                                new
-                                {
-                                    SchedualeTimeId = 12,
-                                    EndAt = new TimeSpan(0, 13, 0, 0, 0),
-                                    StartAt = new TimeSpan(0, 11, 0, 0, 0)
-                                });
-                        });
-
                     b.Navigation("Doctor");
-
-                    b.Navigation("TimeSlot")
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("ClinicManagement.Entities.Department", b =>

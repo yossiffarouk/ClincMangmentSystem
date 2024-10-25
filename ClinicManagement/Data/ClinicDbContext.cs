@@ -17,7 +17,7 @@ namespace ClinicManagement.Data
         public DbSet<Department> Departments { get; set; }
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Prescription> Prescriptions { get; set; }
-        public DbSet<SchedualeTime> schedualeTimes { get; set; }
+        public DbSet<SchedualeTime> SchedualeTimes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

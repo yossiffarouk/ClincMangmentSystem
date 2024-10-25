@@ -1,10 +1,9 @@
-﻿using ClinicManagement.Entities;
-using ClinicManagement.Enumes;
+﻿using ClinicMangmentSystem.Entites;
 using static ClinicManagement.Enumes.DaysEnum;
 
-namespace ClinicMangmentSystem.Entites
+namespace ClinicManagement.DTOS.ScheduleTime
 {
-    public class SchedualeTime
+    public class AddScheduleTimeDto
     {
         public int Id { get; set; }
         public TimeSpan DoctorComeIn { get; set; }
@@ -13,7 +12,6 @@ namespace ClinicMangmentSystem.Entites
 
         // Time with Doctor (M to 1)
         public int DoctorId { get; set; }
-        public Doctor Doctor { get; set; }= null!;
+       
     }
-  
 }

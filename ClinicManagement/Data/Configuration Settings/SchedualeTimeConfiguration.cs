@@ -14,11 +14,11 @@ namespace ClinicManagement.Data.Configuration_Settings
             builder.HasKey(t => t.Id);
             builder.Property(x=>x.Id).ValueGeneratedNever();
 
-            builder.OwnsOne(x => x.TimeSlot, x =>
-            {
-                x.Property(x => x.StartAt).HasColumnType("Time").HasColumnName("StartTime");
-                x.Property(x => x.EndAt).HasColumnType("Time").HasColumnName("EndTime");
-            });
+            //builder.OwnsOne(x => x.TimeSlot, x =>
+            //{
+            //    x.Property(x => x.StartAt).HasColumnType("Time").HasColumnName("StartTime");
+            //    x.Property(x => x.EndAt).HasColumnType("Time").HasColumnName("EndTime");
+            //});
 
             builder.Property(x => x.Day)
                 .HasConversion(
@@ -27,7 +27,7 @@ namespace ClinicManagement.Data.Configuration_Settings
                 ).IsRequired();
 
             builder.HasData(SeedingData.LoadSchedualeTimes());
-            builder.OwnsOne(x=>x.TimeSlot).HasData(SeedingData.LoadOfTimeSlot());
+            //builder.OwnsOne(x=>x.TimeSlot).HasData(SeedingData.LoadOfTimeSlot());
         }
     }
 }

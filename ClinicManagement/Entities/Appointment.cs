@@ -18,6 +18,6 @@ namespace ClinicManagement.Entities
         public int PatientId { get; set; }
         public Patient Patient { get; set; }=null!;
 
-        public DateTime Time { get; set; }
+        public DateTime Time { get; set; } = DateTime.Now;
     }
 }

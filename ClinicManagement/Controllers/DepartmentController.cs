@@ -7,6 +7,7 @@ namespace ClinicManagement.Controllers
     [ApiController]
     public class DepartmentController : ControllerBase
     {
+
         [HttpGet]
         public IActionResult GetDepartment()
         {

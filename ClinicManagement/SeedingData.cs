@@ -56,39 +56,22 @@ namespace ClinicManagement
         {
             return new List<SchedualeTime>()
             {
-                new SchedualeTime{Id = 1, Day=Days.Monday,DoctorId = 1},
-                new SchedualeTime{Id = 2, Day=Days.Monday,DoctorId = 1},
-                new SchedualeTime{Id = 3,  Day=Days.Tuesday,DoctorId = 2},
-                new SchedualeTime{Id = 4,  Day=Days.Tuesday,DoctorId = 3},
-                new SchedualeTime{Id = 5, Day=Days.Wednesday,DoctorId = 4},
-                new SchedualeTime{Id = 6,  Day=Days.Wednesday,DoctorId = 4},
-                new SchedualeTime{Id = 7,  Day=Days.Thursday,DoctorId = 5},
-                new SchedualeTime{Id = 8, Day=Days.Thursday,DoctorId = 5},
-                new SchedualeTime{Id = 9, Day=Days.Friday,DoctorId = 6},
-                new SchedualeTime{Id = 10, Day=Days.Friday,DoctorId = 7},
-                new SchedualeTime{Id = 11, Day=Days.Saturday,DoctorId = 7},
-                new SchedualeTime{Id = 12, Day=Days.Saturday,DoctorId = 8}
+                new SchedualeTime{Id = 1,DoctorComeIn =TimeSpan.Parse("09:00:00"),DoctorLeaveIn = TimeSpan.Parse("11:00:00") , Day=Days.Monday,DoctorId = 1},
+                new SchedualeTime{Id = 2,DoctorComeIn =TimeSpan.Parse("09:00:00"),DoctorLeaveIn = TimeSpan.Parse("11:00:00"), Day=Days.Monday,DoctorId = 1},
+                new SchedualeTime{Id = 3,DoctorComeIn =TimeSpan.Parse("09:00:00"),DoctorLeaveIn = TimeSpan.Parse("11:00:00"),  Day=Days.Tuesday,DoctorId = 2},
+                new SchedualeTime{Id = 4,DoctorComeIn =TimeSpan.Parse("09:00:00"),DoctorLeaveIn = TimeSpan.Parse("11:00:00"),  Day=Days.Tuesday,DoctorId = 3},
+                new SchedualeTime{Id = 5,DoctorComeIn =TimeSpan.Parse("09:00:00"),DoctorLeaveIn = TimeSpan.Parse("11:00:00"), Day=Days.Wednesday,DoctorId = 4},
+                new SchedualeTime{Id = 6,DoctorComeIn =TimeSpan.Parse("09:00:00"),DoctorLeaveIn = TimeSpan.Parse("11:00:00"),  Day=Days.Wednesday,DoctorId = 4},
+                new SchedualeTime{Id = 7,DoctorComeIn =TimeSpan.Parse("09:00:00"),DoctorLeaveIn = TimeSpan.Parse("11:00:00"),  Day=Days.Thursday,DoctorId = 5},
+                new SchedualeTime{Id = 8,DoctorComeIn =TimeSpan.Parse("09:00:00"),DoctorLeaveIn = TimeSpan.Parse("11:00:00"), Day=Days.Thursday,DoctorId = 5},
+                new SchedualeTime{Id = 9,DoctorComeIn =TimeSpan.Parse("09:00:00"),DoctorLeaveIn = TimeSpan.Parse("11:00:00"), Day=Days.Friday,DoctorId = 6},
+                new SchedualeTime{Id = 10,DoctorComeIn =TimeSpan.Parse("09:00:00"),DoctorLeaveIn = TimeSpan.Parse("11:00:00"), Day=Days.Friday,DoctorId = 7},
+                new SchedualeTime{Id = 11,DoctorComeIn =TimeSpan.Parse("09:00:00"),DoctorLeaveIn = TimeSpan.Parse("11:00:00"), Day=Days.Saturday,DoctorId = 7},
+                new SchedualeTime{Id = 12,DoctorComeIn =TimeSpan.Parse("09:00:00"),DoctorLeaveIn = TimeSpan.Parse("11:00:00"), Day=Days.Saturday,DoctorId = 8}
             };
         }
 
-        public static List<TimeSlot> LoadOfTimeSlot()
-        {
-            return new List<TimeSlot>()
-            {
-                new TimeSlot{SchedualeTimeId = 1,StartAt = TimeSpan.Parse("09:00:00"), EndAt = TimeSpan.Parse("11:00:00")},
-                new TimeSlot{SchedualeTimeId = 2,StartAt = TimeSpan.Parse("11:00:00"), EndAt = TimeSpan.Parse("13:00:00")},
-                new TimeSlot{SchedualeTimeId = 3,StartAt = TimeSpan.Parse("09:00:00"), EndAt = TimeSpan.Parse("12:00:00")},
-                new TimeSlot{SchedualeTimeId = 4,StartAt = TimeSpan.Parse("13:00:00"), EndAt = TimeSpan.Parse("15:00:00")},
-                new TimeSlot{SchedualeTimeId = 5, StartAt = TimeSpan.Parse("10:00:00"), EndAt = TimeSpan.Parse("12:00:00")},
-                new TimeSlot{SchedualeTimeId = 6,StartAt = TimeSpan.Parse("12:00:00"), EndAt = TimeSpan.Parse("14:00:00")},
-                new TimeSlot{SchedualeTimeId = 7,StartAt = TimeSpan.Parse("09:00:00"), EndAt = TimeSpan.Parse("11:00:00")},
-                new TimeSlot{SchedualeTimeId = 8,StartAt = TimeSpan.Parse("14:00:00"), EndAt = TimeSpan.Parse("16:00:00")},
-                new TimeSlot{SchedualeTimeId = 9,StartAt = TimeSpan.Parse("10:00:00"), EndAt = TimeSpan.Parse("12:00:00")},
-                new TimeSlot{SchedualeTimeId = 10,StartAt = TimeSpan.Parse("13:00:00"), EndAt = TimeSpan.Parse("15:00:00")},
-                new TimeSlot{SchedualeTimeId = 11,StartAt = TimeSpan.Parse("09:00:00"), EndAt = TimeSpan.Parse("11:00:00")},
-                new TimeSlot{SchedualeTimeId = 12,StartAt = TimeSpan.Parse("11:00:00"), EndAt = TimeSpan.Parse("13:00:00")},
-            };
-        }
+       
 
         public static List<Patient> LoadOfPatients()
         {
