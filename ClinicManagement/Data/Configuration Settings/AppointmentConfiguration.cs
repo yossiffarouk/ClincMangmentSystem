@@ -9,7 +9,7 @@ namespace ClinicManagement.Data.Configuration_Settings
     {
         public void Configure(EntityTypeBuilder<Appointment> builder)
         {
-            builder.ToTable("tblAppointment");
+            builder.ToTable("tblAppointments");
 
             builder.HasKey(x => x.Id);
             builder.Property(x=>x.Id).ValueGeneratedNever();

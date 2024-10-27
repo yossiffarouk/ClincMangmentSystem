@@ -1,10 +1,11 @@
 ﻿using ClinicManagement.Entities;
+using ClinicManagement.Services;
 using ClinicMangmentSystem.Entites;
 using Microsoft.EntityFrameworkCore;
 
 namespace ClinicManagement.Data
 {
-    public class ClinicDbContext : DbContext
+    public class ClinicDbContext : DbContext,IDbContextService
     {
         public ClinicDbContext() { }
       
@@ -18,6 +19,11 @@ namespace ClinicManagement.Data
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Prescription> Prescriptions { get; set; }
         public DbSet<SchedualeTime> SchedualeTimes { get; set; }
+
+        public ClinicDbContext UseMe()
+        {
+            return new ClinicDbContext();
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -1,4 +1,5 @@
-﻿using ClinicManagement.Entities;
+﻿using ClinicManagement.DTO;
+using ClinicManagement.Entities;
 
 namespace ClinicMangmentSystem.Entites
 {
@@ -8,7 +9,7 @@ namespace ClinicMangmentSystem.Entites
         public string Name { get; set; } = null!;
         public string Phone { get; set; }=null !;
         public string? Email { get; set; }
-        public string Password { get; set; }= null!;
+        public string Password { get; set; }
 
         // Appointment with doctor (1 to M)
         public ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
@@ -21,10 +22,10 @@ namespace ClinicMangmentSystem.Entites
 
         //1 office with 1 doctor (1 to 1 ) 
         public int? officeId { get; set; }
-        public Office? Office { get; set; }
+        public Office? office { get; set; }
 
         //1 doctor with 1 department (1 to 1)
         public int DeptId { get; set; }
-        public Department Department { get; set; } = null!;
+        public Department department { get; set; } = null!;
     }
 }

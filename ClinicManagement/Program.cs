@@ -1,6 +1,8 @@
 using ClinicManagement;
 using ClinicManagement.Data;
 using ClinicManagement.Repo.AppointentRepo;
+using ClinicManagement.PasswordGenerator;
+using ClinicManagement.Services;
 using ClinicMangmentSystem.Entites;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
@@ -23,8 +25,8 @@ public class Program
                             .Build().GetConnectionString("constr"))
             );
 
-        //ser
-        builder.Services.AddScoped<IAppointmentRepo , AppointmentRepo>();
+        builder.Services.AddScoped<IDbContextService,ClinicDbContext>();
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.

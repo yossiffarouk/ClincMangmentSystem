@@ -35,12 +35,12 @@ namespace ClinicManagement.Data.Configuration_Settings
                 .HasForeignKey(x=>x.DoctorId)
                 .IsRequired();
 
-            builder.HasOne(x=>x.Office)
+            builder.HasOne(x=>x.office)
                 .WithOne(x=>x.Doctor)
                 .HasForeignKey<Doctor>(x=>x.officeId)
                 .IsRequired(false);
 
-            builder.HasOne(x=>x.Department)
+            builder.HasOne(x=>x.department)
                 .WithMany(x=>x.Doctors)
                 .HasForeignKey(x=>x.DeptId)
                 .IsRequired();
