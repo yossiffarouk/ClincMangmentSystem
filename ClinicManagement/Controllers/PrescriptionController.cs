@@ -1,5 +1,5 @@
 ﻿using ClinicManagement.Data;
-using ClinicManagement.DTOS.Prescription;
+using ClinicManagement.DTO.Prescription;
 using ClinicMangmentSystem.Entites;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ClinicManagement.Controllers
 {
+    // saber
     [Route("api/[controller]")]
     [ApiController]
     public class PrescriptionController : ControllerBase
@@ -22,7 +23,7 @@ namespace ClinicManagement.Controllers
         {
             var prescriptions = await _context.Prescriptions
                 .Include(p => p.Doctor)
-                .ThenInclude(p=>p.Office)
+                .ThenInclude(p=>p.office)
                 .Include(p => p.Patient)
                 .ToListAsync();
 

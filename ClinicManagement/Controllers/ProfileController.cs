@@ -12,6 +12,7 @@ using System.Text;
 
 namespace ClinicMangmentSystem.Controllers
 {
+    // farouk
     //[Route("api/[controller]")]
     [ApiController]
     public class ProfileController : ControllerBase

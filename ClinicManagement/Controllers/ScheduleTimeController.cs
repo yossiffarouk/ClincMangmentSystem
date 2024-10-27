@@ -1,5 +1,5 @@
 ﻿using ClinicManagement.Data;
-using ClinicManagement.DTOS.ScheduleTime;
+using ClinicManagement.DTO.ScheduleTime;
 using ClinicMangmentSystem.Entites;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -12,7 +12,7 @@ namespace ClinicManagement.Controllers
     public class ScheduleTimeController : ControllerBase
     {
         private readonly ClinicDbContext _context;
-
+        // saber
         public ScheduleTimeController(ClinicDbContext context)
         {
             _context = context;
@@ -28,8 +28,8 @@ namespace ClinicManagement.Controllers
             var times = schedualeTimes.Select(x => new ScheduleTimeReadDto
             {
                 Id = x.Id,
-                DoctorComeIn = x.DoctorComeIn,
-                DoctorLeaveIn = x.DoctorLeaveIn,
+                DoctorComeIn = x.DoctorComeIn.ToString(),
+                DoctorLeaveIn = x.DoctorLeaveIn.ToString(),
                 Day = x.Day.ToString(),
                 DoctorName=x.Doctor.Name,
             });
@@ -52,8 +52,8 @@ namespace ClinicManagement.Controllers
             var timesForDoctor = new ScheduleTimeReadDto
             {
                 Id = schedualeTime.Id,
-                DoctorComeIn = schedualeTime.DoctorComeIn,
-                DoctorLeaveIn = schedualeTime.DoctorLeaveIn,
+                DoctorComeIn = schedualeTime.DoctorComeIn.ToString(),
+                DoctorLeaveIn = schedualeTime.DoctorLeaveIn.ToString(),
                 Day = schedualeTime.Day.ToString(),
                 DoctorName = schedualeTime.Doctor.Name,
 
@@ -72,8 +72,8 @@ namespace ClinicManagement.Controllers
                 return BadRequest("Invalid DoctorId");
             }
             var x = new SchedualeTime {
-                DoctorComeIn = AddScheduleTimeDto.DoctorComeIn,
-                DoctorLeaveIn= AddScheduleTimeDto.DoctorLeaveIn,
+                DoctorComeIn = TimeSpan.Parse( AddScheduleTimeDto.DoctorComeIn),
+                DoctorLeaveIn= TimeSpan.Parse(AddScheduleTimeDto.DoctorLeaveIn),
                 Day= AddScheduleTimeDto.Day,
                 DoctorId = AddScheduleTimeDto.DoctorId,
             };
@@ -100,8 +100,8 @@ namespace ClinicManagement.Controllers
             }
 
             // Update SchedualeTime details
-            existingSchedualeTime.DoctorComeIn = EdiScheduleTimeDto.DoctorComeIn;
-            existingSchedualeTime.DoctorLeaveIn = EdiScheduleTimeDto.DoctorLeaveIn;
+            existingSchedualeTime.DoctorComeIn = TimeSpan.Parse(EdiScheduleTimeDto.DoctorComeIn);
+            existingSchedualeTime.DoctorLeaveIn = TimeSpan.Parse(EdiScheduleTimeDto.DoctorLeaveIn);
             existingSchedualeTime.Day = EdiScheduleTimeDto.Day;
             existingSchedualeTime.DoctorId = EdiScheduleTimeDto.DoctorId;
 

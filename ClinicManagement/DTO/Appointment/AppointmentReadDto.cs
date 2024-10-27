@@ -1,7 +1,7 @@
 ﻿using ClinicMangmentSystem.Entites;
 using static ClinicMangmentSystem.Enums.state;
 
-namespace ClinicManagement.DTOS.Appointment
+namespace ClinicManagement.DTO.Appointment
 {
     public class AppointmentReadDto
     {
@@ -10,11 +10,12 @@ namespace ClinicManagement.DTOS.Appointment
         public State State { get; set; } = State.schedule;
         public double Price { get; set; }
 
-      
+
 
         public DateTime Time { get; set; }
 
-         public string? DoctorName { get; set; }
-         //public string? PatientName { get; set; }
+        public string? DoctorName { get; set; }
+        public string? PatientName { get; set; }
+        //public string? PatientName { get; set; }
     }
 }

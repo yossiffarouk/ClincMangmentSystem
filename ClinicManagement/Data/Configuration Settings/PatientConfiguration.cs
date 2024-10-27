@@ -11,7 +11,7 @@ namespace ClinicManagement.Data.Configuration_Settings
         public void Configure(EntityTypeBuilder<Patient> builder)
         {
             builder.ToTable("tblPatient");
-
+           
             builder.HasKey(x=>x.Id);
             builder.Property(x=>x.Id).ValueGeneratedNever();
 

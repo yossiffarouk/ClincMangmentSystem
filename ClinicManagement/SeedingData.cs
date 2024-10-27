@@ -3,7 +3,8 @@ using ClinicMangmentSystem.Entites;
 using static ClinicManagement.Enumes.DaysEnum;
 using static ClinicMangmentSystem.Enums.gender;
 using static ClinicMangmentSystem.Enums.state;
-using static ClinicManagement.PasswordGenerator.PasswordGenrator;
+
+
 
 
 namespace ClinicManagement
@@ -42,16 +43,16 @@ namespace ClinicManagement
         {
             return new List<Doctor>()
             {
-                new Doctor{ Id = 1, Name = "Dr. Ahmed Tharwat",Phone = "+201022812243",Email = "Ahmed.Tharwat@clinic.com",Password = EncodingPassword(GenerateRandomPassword(12)) ,officeId=1,DeptId=1 },
-                new Doctor{ Id = 2, Name = "Dr. Esraa Zaki",Phone="+201155698835",Email="Esraa.Zaki@clinic.com",Password = EncodingPassword(GenerateRandomPassword(12)) ,officeId=2,DeptId=2},
-                new Doctor{ Id = 3, Name = "Dr. Ahmed Khaled",Phone="+201012345678",Email="Ahmed.Khaled@clinic.com",Password=EncodingPassword(GenerateRandomPassword(12)) ,officeId=3, DeptId = 3},
-                new Doctor{ Id = 4, Name = "Dr. Fatima Hassan",Phone="+201198765432",Email="Fatima.Hassan@clinic.com",Password=EncodingPassword(GenerateRandomPassword(12)) ,officeId=4, DeptId = 4},
-                new Doctor{ Id = 5, Name = "Dr. Mohamed Ali",Phone="+201234567890",Email="Mohamed.Ali@clinic.com",Password=EncodingPassword(GenerateRandomPassword(12))  ,officeId=null,DeptId=5},
-                new Doctor{ Id = 6, Name = "Dr. Sara Mohamed",Phone="+201512345678",Email="Sara.Mohamed@clinic.com",Password=EncodingPassword(GenerateRandomPassword(12))  ,officeId = null, DeptId = 6},
-                new Doctor{ Id = 7, Name = "Dr. Omar Mostafa",Phone="+201146890012",Email="Omar.Mostafa@clinic.com",Password=EncodingPassword(GenerateRandomPassword(12)) ,officeId=5, DeptId = 7},
-                new Doctor{ Id = 8, Name = "Dr. Mohamed AdbEL-Hameed",Phone="+201014501522",Email="Mohamed.AbdEl-Hameed@clinic.com",Password=EncodingPassword(GenerateRandomPassword(12)) ,officeId=6, DeptId = 8},
-                new Doctor{ Id = 9, Name = "Dr. Ahmed Issam",Phone="+201001626756",Email="AhmedIssam@gmail.com",Password=EncodingPassword(GenerateRandomPassword(12)) ,officeId=null,DeptId=4},
-                new Doctor{ Id =10, Name = "Dr. Mohamed Tawfiq",Phone="+201557945331",Email="MohamedTawfiq@gmail.com",Password=EncodingPassword(GenerateRandomPassword(12)) ,officeId=null,DeptId=6}
+                new Doctor{ Id = 1, Name = "Dr. Ahmed Tharwat",Phone = "+201022812243",Email = "Ahmed.Tharwat@clinic.com",Password = "A1234" ,officeId=1,DeptId=1 },
+                new Doctor{ Id = 2, Name = "Dr. Esraa Zaki",Phone="+201155698835",Email="Esraa.Zaki@clinic.com",Password = "A1234" ,officeId=2,DeptId=2},
+                new Doctor{ Id = 3, Name = "Dr. Ahmed Khaled",Phone="+201012345678",Email="Ahmed.Khaled@clinic.com",Password = "A1234" ,officeId=3, DeptId = 3},
+                new Doctor{ Id = 4, Name = "Dr. Fatima Hassan",Phone="+201198765432",Email="Fatima.Hassan@clinic.com",Password = "A1234" ,officeId=4, DeptId = 4},
+                new Doctor{Id = 5, Name = "Dr. Mohamed Ali", Phone = "+201234567890", Email = "Mohamed.Ali@clinic.com",Password = "A1234", officeId = null, DeptId = 5},
+                new Doctor{ Id = 6, Name = "Dr. Sara Mohamed",Phone="+201512345678",Email="Sara.Mohamed@clinic.com",Password = "A1234" ,officeId = null, DeptId = 6},
+                new Doctor{ Id = 7, Name = "Dr. Omar Mostafa",Phone="+201146890012",Email="Omar.Mostafa@clinic.com",Password = "A1234" ,officeId=5, DeptId = 7},
+                new Doctor{ Id = 8, Name = "Dr. Mohamed AdbEL-Hameed",Phone="+201014501522",Email="Mohamed.AbdEl-Hameed@clinic.com",Password = "A1234" ,officeId=6, DeptId = 8},
+                new Doctor{ Id = 9, Name = "Dr. Ahmed Issam",Phone="+201001626756",Email="AhmedIssam@gmail.com",Password = "A1234" ,officeId=null,DeptId=4},
+                new Doctor{ Id =10, Name = "Dr. Mohamed Tawfiq",Phone="+201557945331",Email="MohamedTawfiq@gmail.com",Password = "A1234" ,officeId=null,DeptId=6}
             };
         }
 

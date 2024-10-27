@@ -66,11 +66,7 @@ namespace ClinicManagement.Migrations
                             Price = 100m,
                             Reason = "Routine check-up",
                             State = "schedule",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 21, 19, 8, 17, 56, DateTimeKind.Local).AddTicks(1086)
-=======
-                            Time = new DateTime(2024, 10, 24, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7351)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 28, 8, 42, 14, 456, DateTimeKind.Local).AddTicks(825)
                         },
                         new
                         {
@@ -80,11 +76,7 @@ namespace ClinicManagement.Migrations
                             Price = 80m,
                             Reason = "Flu symptoms",
                             State = "completed",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 19, 19, 8, 17, 56, DateTimeKind.Local).AddTicks(1122)
-=======
-                            Time = new DateTime(2024, 10, 22, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7386)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 26, 8, 42, 14, 456, DateTimeKind.Local).AddTicks(835)
                         },
                         new
                         {
@@ -94,11 +86,7 @@ namespace ClinicManagement.Migrations
                             Price = 120m,
                             Reason = "Back pain",
                             State = "completed",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 19, 19, 8, 17, 56, DateTimeKind.Local).AddTicks(1125)
-=======
-                            Time = new DateTime(2024, 10, 22, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7389)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 26, 8, 42, 14, 456, DateTimeKind.Local).AddTicks(841)
                         },
                         new
                         {
@@ -108,11 +96,7 @@ namespace ClinicManagement.Migrations
                             Price = 200m,
                             Reason = "Dental check-up",
                             State = "schedule",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 21, 19, 8, 17, 56, DateTimeKind.Local).AddTicks(1127)
-=======
-                            Time = new DateTime(2024, 10, 24, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7392)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 28, 8, 42, 14, 456, DateTimeKind.Local).AddTicks(846)
                         },
                         new
                         {
@@ -122,11 +106,7 @@ namespace ClinicManagement.Migrations
                             Price = 90m,
                             Reason = "Skin rash",
                             State = "schedule",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 25, 19, 8, 17, 56, DateTimeKind.Local).AddTicks(1129)
-=======
-                            Time = new DateTime(2024, 10, 28, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7394)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 11, 1, 8, 42, 14, 456, DateTimeKind.Local).AddTicks(852)
                         },
                         new
                         {
@@ -136,11 +116,7 @@ namespace ClinicManagement.Migrations
                             Price = 75m,
                             Reason = "Eye examination",
                             State = "completed",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 17, 19, 8, 17, 56, DateTimeKind.Local).AddTicks(1133)
-=======
-                            Time = new DateTime(2024, 10, 20, 18, 41, 58, 632, DateTimeKind.Local).AddTicks(7398)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 24, 8, 42, 14, 456, DateTimeKind.Local).AddTicks(859)
                         },
                         new
                         {
@@ -150,11 +126,7 @@ namespace ClinicManagement.Migrations
                             Price = 150m,
                             Reason = "Physical therapy",
                             State = "schedule",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 22, 7, 8, 17, 56, DateTimeKind.Local).AddTicks(1135)
-=======
-                            Time = new DateTime(2024, 10, 25, 6, 41, 58, 632, DateTimeKind.Local).AddTicks(7401)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 28, 20, 42, 14, 456, DateTimeKind.Local).AddTicks(864)
                         },
                         new
                         {
@@ -164,11 +136,7 @@ namespace ClinicManagement.Migrations
                             Price = 60m,
                             Reason = "Cold and cough",
                             State = "completed",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 20, 7, 8, 17, 56, DateTimeKind.Local).AddTicks(1137)
-=======
-                            Time = new DateTime(2024, 10, 23, 6, 41, 58, 632, DateTimeKind.Local).AddTicks(7403)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 26, 20, 42, 14, 456, DateTimeKind.Local).AddTicks(869)
                         },
                         new
                         {
@@ -178,11 +146,7 @@ namespace ClinicManagement.Migrations
                             Price = 110m,
                             Reason = "Annual check-up",
                             State = "completed",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 20, 17, 53, 17, 56, DateTimeKind.Local).AddTicks(1139)
-=======
-                            Time = new DateTime(2024, 10, 23, 17, 26, 58, 632, DateTimeKind.Local).AddTicks(7405)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 27, 7, 27, 14, 456, DateTimeKind.Local).AddTicks(875)
                         },
                         new
                         {
@@ -192,11 +156,7 @@ namespace ClinicManagement.Migrations
                             Price = 250m,
                             Reason = "Chest pain",
                             State = "schedule",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 20, 20, 8, 17, 56, DateTimeKind.Local).AddTicks(1141)
-=======
-                            Time = new DateTime(2024, 10, 23, 19, 41, 58, 632, DateTimeKind.Local).AddTicks(7409)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 27, 9, 42, 14, 456, DateTimeKind.Local).AddTicks(882)
                         },
                         new
                         {
@@ -206,11 +166,7 @@ namespace ClinicManagement.Migrations
                             Price = 85m,
                             Reason = "Allergy consultation",
                             State = "completed",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 20, 18, 8, 17, 56, DateTimeKind.Local).AddTicks(1143)
-=======
-                            Time = new DateTime(2024, 10, 23, 17, 41, 58, 632, DateTimeKind.Local).AddTicks(7411)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 27, 7, 42, 14, 456, DateTimeKind.Local).AddTicks(888)
                         },
                         new
                         {
@@ -220,11 +176,7 @@ namespace ClinicManagement.Migrations
                             Price = 95m,
                             Reason = "Wound dressing",
                             State = "schedule",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 20, 21, 8, 17, 56, DateTimeKind.Local).AddTicks(1145)
-=======
-                            Time = new DateTime(2024, 10, 23, 20, 41, 58, 632, DateTimeKind.Local).AddTicks(7414)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 27, 10, 42, 14, 456, DateTimeKind.Local).AddTicks(893)
                         },
                         new
                         {
@@ -234,11 +186,7 @@ namespace ClinicManagement.Migrations
                             Price = 70m,
                             Reason = "Consultation for headache",
                             State = "completed",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 18, 22, 8, 17, 56, DateTimeKind.Local).AddTicks(1147)
-=======
-                            Time = new DateTime(2024, 10, 21, 21, 41, 58, 632, DateTimeKind.Local).AddTicks(7423)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 25, 11, 42, 14, 456, DateTimeKind.Local).AddTicks(899)
                         },
                         new
                         {
@@ -248,11 +196,7 @@ namespace ClinicManagement.Migrations
                             Price = 120m,
                             Reason = "Pregnancy check-up",
                             State = "schedule",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 20, 22, 38, 17, 56, DateTimeKind.Local).AddTicks(1149)
-=======
-                            Time = new DateTime(2024, 10, 23, 22, 11, 58, 632, DateTimeKind.Local).AddTicks(7426)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 27, 12, 12, 14, 456, DateTimeKind.Local).AddTicks(905)
                         },
                         new
                         {
@@ -262,11 +206,7 @@ namespace ClinicManagement.Migrations
                             Price = 110m,
                             Reason = "Diabetes management",
                             State = "schedule",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 21, 18, 8, 17, 56, DateTimeKind.Local).AddTicks(1150)
-=======
-                            Time = new DateTime(2024, 10, 24, 17, 41, 58, 632, DateTimeKind.Local).AddTicks(7428)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 28, 7, 42, 14, 456, DateTimeKind.Local).AddTicks(911)
                         },
                         new
                         {
@@ -276,11 +216,7 @@ namespace ClinicManagement.Migrations
                             Price = 85m,
                             Reason = "Blood pressure check",
                             State = "completed",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 20, 15, 38, 17, 56, DateTimeKind.Local).AddTicks(1152)
-=======
-                            Time = new DateTime(2024, 10, 23, 15, 11, 58, 632, DateTimeKind.Local).AddTicks(7430)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 27, 5, 12, 14, 456, DateTimeKind.Local).AddTicks(916)
                         },
                         new
                         {
@@ -290,11 +226,7 @@ namespace ClinicManagement.Migrations
                             Price = 130m,
                             Reason = "Knee pain assessment",
                             State = "completed",
-<<<<<<< HEAD
-                            Time = new DateTime(2024, 10, 20, 21, 38, 17, 56, DateTimeKind.Local).AddTicks(1154)
-=======
-                            Time = new DateTime(2024, 10, 23, 21, 11, 58, 632, DateTimeKind.Local).AddTicks(7433)
->>>>>>> Mohamed2
+                            Time = new DateTime(2024, 10, 27, 11, 12, 14, 456, DateTimeKind.Local).AddTicks(922)
                         });
                 });
 
@@ -403,11 +335,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 1,
                             Email = "Ahmed.Tharwat@clinic.com",
                             Name = "Dr. Ahmed Tharwat",
-<<<<<<< HEAD
-                            Password = "2U88~dVA9I",
-=======
-                            Password = "YV56ZjRGQFd+aV4y",
->>>>>>> Mohamed2
+                            Password = "djZuV1FsMHd+NSko",
                             Phone = "+201022812243",
                             officeId = 1
                         },
@@ -417,11 +345,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 2,
                             Email = "Esraa.Zaki@clinic.com",
                             Name = "Dr. Esraa Zaki",
-<<<<<<< HEAD
-                            Password = "wSzxjWHSXO",
-=======
-                            Password = "QiMmVUtKMFchdTE0",
->>>>>>> Mohamed2
+                            Password = "V3VucEttNERxMFRK",
                             Phone = "+201155698835",
                             officeId = 2
                         },
@@ -431,11 +355,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 3,
                             Email = "Ahmed.Khaled@clinic.com",
                             Name = "Dr. Ahmed Khaled",
-<<<<<<< HEAD
-                            Password = "w#mW9SFnU8",
-=======
-                            Password = "TV9vbXhANzVGYl5l",
->>>>>>> Mohamed2
+                            Password = "cTR3X3A2ITdMa3R4",
                             Phone = "+201012345678",
                             officeId = 3
                         },
@@ -445,11 +365,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 4,
                             Email = "Fatima.Hassan@clinic.com",
                             Name = "Dr. Fatima Hassan",
-<<<<<<< HEAD
-                            Password = "9bGswO_f3@",
-=======
-                            Password = "b1FWdCQ2dX4mRG41",
->>>>>>> Mohamed2
+                            Password = "JXdLRkxkMjMlTlNA",
                             Phone = "+201198765432",
                             officeId = 4
                         },
@@ -459,11 +375,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 5,
                             Email = "Mohamed.Ali@clinic.com",
                             Name = "Dr. Mohamed Ali",
-<<<<<<< HEAD
-                            Password = "If-3^Tmw^O",
-=======
-                            Password = "cGR1Z15wYWVXbX4x",
->>>>>>> Mohamed2
+                            Password = "NWdQQkROVGFOUFFI",
                             Phone = "+201234567890"
                         },
                         new
@@ -472,11 +384,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 6,
                             Email = "Sara.Mohamed@clinic.com",
                             Name = "Dr. Sara Mohamed",
-<<<<<<< HEAD
-                            Password = "gVjW_fi#Tx",
-=======
-                            Password = "N2hkMn4hRChWTWIp",
->>>>>>> Mohamed2
+                            Password = "V1dCamM3Xm9BbV9R",
                             Phone = "+201512345678"
                         },
                         new
@@ -485,11 +393,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 7,
                             Email = "Omar.Mostafa@clinic.com",
                             Name = "Dr. Omar Mostafa",
-<<<<<<< HEAD
-                            Password = "79qo(kPgNg",
-=======
-                            Password = "T1FBJWtfN1NqQW9R",
->>>>>>> Mohamed2
+                            Password = "eGReQWQwRWJGYiRX",
                             Phone = "+201146890012",
                             officeId = 5
                         },
@@ -499,11 +403,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 8,
                             Email = "Mohamed.AbdEl-Hameed@clinic.com",
                             Name = "Dr. Mohamed AdbEL-Hameed",
-<<<<<<< HEAD
-                            Password = "uTqLe@GNSW",
-=======
-                            Password = "OVp3NChKZm4jZ1Bu",
->>>>>>> Mohamed2
+                            Password = "RVV5Z1VTZThxbDk3",
                             Phone = "+201014501522",
                             officeId = 6
                         },
@@ -513,7 +413,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 4,
                             Email = "AhmedIssam@gmail.com",
                             Name = "Dr. Ahmed Issam",
-                            Password = "NFUmJCZPKiVqOUpU",
+                            Password = "JWdTfjUxU2EjMjB3",
                             Phone = "+201001626756"
                         },
                         new
@@ -522,7 +422,7 @@ namespace ClinicManagement.Migrations
                             DeptId = 6,
                             Email = "MohamedTawfiq@gmail.com",
                             Name = "Dr. Mohamed Tawfiq",
-                            Password = "TksoKGkxJnVpKCFk",
+                            Password = "Si00a1hJXnkhS3hk",
                             Phone = "+201557945331"
                         });
                 });

@@ -1,16 +1,16 @@
 ﻿using ClinicMangmentSystem.Entites;
 
-namespace ClinicManagement.DTOS.Appointment
+namespace ClinicManagement.DTO.Appointment
 {
-    public class AddPrescriptionDto
+    public class AddAppointentDto
     {
         //public int Id { get; set; }
         public string Reason { get; set; }
-        public double Price { get; set; } 
+        public double Price { get; set; }
 
         public int DoctorId { get; set; }
 
         public int PatientId { get; set; }
-        
+
     }
 }

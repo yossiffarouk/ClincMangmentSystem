@@ -6,16 +6,17 @@ using ClinicManagement.DTO.OfficeDtos;
 using ClinicManagement.DTO.SchedualeTimeDtos;
 using ClinicManagement.Services;
 using ClinicMangmentSystem.Entites;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Numerics;
-using static ClinicManagement.PasswordGenerator.PasswordGenrator;
 
 namespace ClinicManagement.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    // AHmed ibrahem
     public class DoctorController : ControllerBase
     {
         private readonly ClinicDbContext service;
@@ -28,6 +29,7 @@ namespace ClinicManagement.Controllers
 
        // Get All Doctors
         [HttpGet("Get/All")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<Doctor>>> GetDoctorS()
         {
             var doctors = await service.Doctors
@@ -57,8 +59,8 @@ namespace ClinicManagement.Controllers
                 {
                     Id = s.Id,
                     Day = s.Day.ToString(),
-                    StartAt = s.TimeSlot.StartAt,
-                    EndAt = s.TimeSlot.EndAt
+                    StartAt = s.DoctorComeIn,
+                    EndAt = s.DoctorLeaveIn
                 }).ToList()
             }).ToList();
 
@@ -96,8 +98,8 @@ namespace ClinicManagement.Controllers
                 {
                     Id = x.Id,
                     Day = x.Day.ToString(),
-                    StartAt = x.TimeSlot.StartAt,
-                    EndAt = x.TimeSlot.EndAt,
+                    StartAt = x.DoctorComeIn,
+                    EndAt = x.DoctorLeaveIn
                 }).ToList(),
                 Office = doctor.office !=null ? new OfficeDTO
                 {
@@ -282,24 +284,24 @@ namespace ClinicManagement.Controllers
 
 
         // Add New Doctor
-        [HttpPost("Add")]
-        public async Task<ActionResult<IEnumerable<Doctor>>> PostDoctor(DoctorWithDeptIdAndOffId Doctor)
-        {
-            var doctor = new Doctor()
-            {
-                Id = Doctor.Id,
-                Name = Doctor.Name,
-                Email = Doctor.Email,
-                Phone = Doctor.Phone,
-                Password = EncodingPassword(GenerateRandomPassword(12)),
-                officeId = Doctor.officeId,
-                DeptId = Doctor.DeptId
-            };
+        //[HttpPost("Add")]
+        //public async Task<ActionResult<IEnumerable<Doctor>>> PostDoctor(DoctorWithDeptIdAndOffId Doctor)
+        //{
+        //    var doctor = new Doctor()
+        //    {
+        //        Id = Doctor.Id,
+        //        Name = Doctor.Name,
+        //        Email = Doctor.Email,
+        //        Phone = Doctor.Phone,
+        //        Password = EncodingPassword(GenerateRandomPassword(12)),
+        //        officeId = Doctor.officeId,
+        //        DeptId = Doctor.DeptId
+        //    };
 
-            service.Doctors.Add(doctor);
-            await service.SaveChangesAsync();
-            return StatusCode(StatusCodes.Status201Created);
-        }
+        //    service.Doctors.Add(doctor);
+        //    await service.SaveChangesAsync();
+        //    return StatusCode(StatusCodes.Status201Created);
+        //}
 
 
 

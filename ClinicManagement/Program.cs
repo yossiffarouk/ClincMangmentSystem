@@ -1,11 +1,15 @@
 using ClinicManagement;
 using ClinicManagement.Data;
-using ClinicManagement.Repo.AppointentRepo;
-using ClinicManagement.PasswordGenerator;
 using ClinicManagement.Services;
 using ClinicMangmentSystem.Entites;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using Microsoft.Data.SqlClient;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
+using System.Text;
 
 public class Program
 {
@@ -22,9 +26,24 @@ public class Program
         builder.Services.AddDbContext<ClinicDbContext>(
                 builder => builder.UseSqlServer(
                             new ConfigurationBuilder().AddJsonFile("appsettings.json")
-                            .Build().GetConnectionString("constr"))
+                .Build().GetConnectionString("constr"))
             );
 
+        builder.Services.AddAuthentication(options =>
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        })
+        .AddJwtBearer(options =>
+        {
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("gsengnlingowtgjpawnt3209u453w45j094tewnt083")),
+                ValidateIssuer = false,
+                ValidateAudience = false
+            };
+        });
         builder.Services.AddScoped<IDbContextService,ClinicDbContext>();
 
         var app = builder.Build();
@@ -39,6 +58,7 @@ public class Program
         app.UseHttpsRedirection();
 
         app.UseAuthorization();
+        app.UseAuthentication();
 
         app.MapControllers();
         

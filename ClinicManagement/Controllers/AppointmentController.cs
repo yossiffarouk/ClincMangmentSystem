@@ -1,10 +1,15 @@
 ﻿using ClinicManagement.Data;
-using ClinicManagement.DTOS.Appointment;
+using ClinicManagement.DTO.Appointment;
+
 using ClinicManagement.Entities;
-using ClinicManagement.Repo.AppointentRepo;
+
+using ClinicManagement.Entities;
+using ClinicManagement.Services;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using static ClinicMangmentSystem.Enums.state;
 
 namespace ClinicManagement.Controllers
 {
@@ -12,62 +17,99 @@ namespace ClinicManagement.Controllers
     [ApiController]
     public class AppointmentController : ControllerBase
     {
-        
-        private readonly IAppointmentRepo _appointment;
 
-        public AppointmentController(IAppointmentRepo appointment)
+        // eman
+        private readonly ClinicDbContext _context;
+
+        public AppointmentController(ClinicDbContext context)
         {
-            
-            _appointment = appointment;
+            _context = context;
         }
 
-        // GET: api/Appointment
+        // Create Appointment
+        [HttpPost]
+        public async Task<ActionResult<AppointmentReadDto>> AddAppointment(AddAppointentDto appointmentDto)
+        {
+            var appointment = new Appointment
+            {
+                Reason = appointmentDto.Reason,
+                Price = appointmentDto.Price,
+                PatientId = appointmentDto.PatientId, // Use the PatientId from DTO
+                DoctorId = appointmentDto.DoctorId,   // Use the DoctorId from DTO
+
+            };
+            _context.Appointments.Add(appointment);
+            _context.SaveChanges();
+            return Ok("Appointment added ");
+        }
+
+        // Read All Appointments
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<AppointmentReadDto>>> GetAppointments()
+        public async Task<ActionResult<List<AppointmentReadDto>>> GetAllAppointments()
         {
-           
-            return Ok(_appointment.GetAllAppointment());
+            var appointments = _context.Appointments.Include(a => a.Doctor).ToList();
+            var appointmentReadDto = appointments.Select(x => new AppointmentReadDto
+            {
+                Id = x.Id,
+                Reason = x.Reason,
+                Price = x.Price,
+                State = x.State,
+                Time = x.Time,
+                DoctorName = x.Doctor.Name,
+            });
+            return Ok(appointmentReadDto);
         }
 
-        // GET: api/Appointment/5
+        // Read Appointment by ID
         [HttpGet("{id}")]
         public async Task<ActionResult<AppointmentReadDto>> GetAppointment(int id)
         {
-           
-            return Ok(_appointment.GetAppointmentById(id));
-        }
-
-        // POST: api/Appointment
-        [HttpPost]
-        public async Task<ActionResult> CreateAppointment(AddPrescriptionDto addAppointentDto)
-        {
-           
-            _appointment.AddAppointment(addAppointentDto);
-            return Ok("new appointment added sucssfully");
-        }
-
-        // PUT: api/Appointment/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAppointment(int id, EditAppointentDto appointment)
-        {
-            if (id != appointment.Id)
+            var appointment = _context.Appointments
+          .Include(a => a.Doctor)
+          .Include(a => a.Patient)
+          .FirstOrDefault(a => a.Id == id);
+            var appointmentReadDto = new AppointmentReadDto
             {
-                return BadRequest("Appointment ID mismatch.");
-            }
+                Reason = appointment.Reason,
+                Price = appointment.Price,
+                State = appointment.State,
+                Time = appointment.Time,
+                DoctorName = appointment.Doctor.Name,
+            };
 
-            _appointment.EditAppointment(id, appointment);
-            return Ok("Edit Succcfully");
+
+            return Ok( appointmentReadDto);
         }
 
-        // DELETE: api/Appointment/5
+        // Update Appointment
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateAppointment(int id, EditAppointentDto appointmentDto)
+        {
+            if (id != appointmentDto.Id) return BadRequest("ID mismatch");
+
+            var existingAppointment = _context.Appointments.FirstOrDefault(a => a.Id == id);
+
+            existingAppointment.Reason = appointmentDto.Reason;
+            existingAppointment.State = appointmentDto.State;
+            existingAppointment.Price = appointmentDto.Price;
+            existingAppointment.DoctorId = appointmentDto.DoctorId;
+            existingAppointment.PatientId = appointmentDto.PatientId;
+
+            _context.SaveChanges();
+            return Ok("Appointment EDIT SUCCFULLY");
+        }
+
+        // Delete Appointment
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAppointment(int id)
         {
-           
-            _appointment.DeleteAppointment(id);
-            return Ok("Appointment Deleted Sucsfully");
+            var appointment = await _context.Appointments.FindAsync(id);
+            if (appointment == null) return NotFound();
+
+            _context.Appointments.Remove(appointment);
+            await _context.SaveChangesAsync();
+            return Ok("Doc removed");
         }
 
-        
     }
 }

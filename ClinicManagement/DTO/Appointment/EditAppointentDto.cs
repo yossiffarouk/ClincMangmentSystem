@@ -1,6 +1,6 @@
 ﻿using static ClinicMangmentSystem.Enums.state;
 
-namespace ClinicManagement.DTOS.Appointment
+namespace ClinicManagement.DTO.Appointment
 {
     public class EditAppointentDto
     {
@@ -11,5 +11,7 @@ namespace ClinicManagement.DTOS.Appointment
         public int DoctorId { get; set; }
 
         public int PatientId { get; set; }
+        public DateTime Time { get; set; }
+
     }
 }

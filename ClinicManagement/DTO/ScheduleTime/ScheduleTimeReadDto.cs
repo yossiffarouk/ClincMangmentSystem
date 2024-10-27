@@ -1,16 +1,16 @@
 ﻿using ClinicMangmentSystem.Entites;
 using static ClinicManagement.Enumes.DaysEnum;
 
-namespace ClinicManagement.DTOS.ScheduleTime
+namespace ClinicManagement.DTO.ScheduleTime
 {
     public class ScheduleTimeReadDto
     {
         public int Id { get; set; }
-        public TimeSpan DoctorComeIn { get; set; }
-        public TimeSpan DoctorLeaveIn { get; set; }
+        public string DoctorComeIn { get; set; }
+        public string DoctorLeaveIn { get; set; }
         public string Day { get; set; }
 
         public string DoctorName { get; set; }
-       
+
     }
 }

@@ -1,6 +1,6 @@
 ﻿using ClinicMangmentSystem.Entites;
 
-namespace ClinicManagement.DTOS.Prescription
+namespace ClinicManagement.DTO.Prescription
 {
     public class PrescriptionReadDto
     {
@@ -12,11 +12,11 @@ namespace ClinicManagement.DTOS.Prescription
 
         public string DoctorName { get; set; }
         //public string DoctorOffice { get; set; }
-        
+
 
 
         public string PatientName { get; set; }
-    
+
 
     }
 }
